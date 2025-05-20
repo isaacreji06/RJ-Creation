@@ -1,6 +1,8 @@
-import React from 'react';
+import { FaLinkedin } from "react-icons/fa"
 import teamImage2 from "../assets/teamImage2.png"
-
+import sadasivan from "../assets/Management/sadasivan.png"
+import reji from "../assets/Management/reji.png"
+import joyson from "../assets/Management/joyson.png"
 function AboutUs() {
   return (
     <section id="about" className="py-20 bg-white">
@@ -64,22 +66,67 @@ function AboutUs() {
               <p className="text-gray-700 leading-relaxed">
                 We provide comprehensive, full turnkey project management for successful finished precision parts and sub-Assemblies. With all the best put together, we can achieve high quality products at a minimum time with a competitive price.
               </p>
-              
-              <div className="pt-4">
-                <a 
-                  href="#services" 
-                  className="inline-flex items-center px-6 py-3 bg-blue-600 text-white font-semibold rounded hover:bg-blue-700 transition-all duration-300"
-                >
-                  KNOW OUR SERVICES
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
-                    <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
-                  </svg>
-                </a>
-              </div>
             </div>
           </div>
         </div>
       </div>
+      {/* Management & Mentors Section */}
+<div className="mt-20">
+  <h3 className="text-3xl font-bold text-gray-800 mb-10 text-center">Our Leadership</h3>
+
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+    
+    {/* Card 1 */}
+    <div className="bg-white shadow-lg rounded-lg overflow-hidden text-center p-6 border-t-4 border-blue-600">
+      <img src={sadasivan} alt="Mr. Sadasivan" className="w-32 h-32 mx-auto rounded-full mb-4 border-2 border-blue-600 object-cover" />
+      <h4 className="text-xl font-bold text-gray-800">Mr. Sadasivan</h4>
+      <p className="text-sm text-gray-500 mb-2">Mentor & Guide</p>
+      <p className="text-gray-600 text-sm mb-2">Over 40 years of experience in Die & Mould Manufacturing.</p>
+    </div>
+
+<div className="bg-white shadow-lg rounded-lg overflow-hidden text-center p-6 border-t-4 border-blue-600">
+  <img src={reji} alt="Mr. Reji P Joseph" className="w-32 h-32 mx-auto rounded-full mb-4 border-2 border-blue-600 object-cover" />
+  <h4 className="text-xl font-bold text-gray-800">Mr. Reji P Joseph</h4>
+  <p className="text-sm text-gray-500 mb-2">Managing Director</p>
+  <p className="text-gray-600 text-sm mb-2">Graduate in science with 27 years of experience in Manufacturing.</p>
+  <div className="text-sm text-gray-700 mt-4 space-y-1">
+    <p><strong>Phone:</strong> +91 94481 22438</p>
+    <p><strong>Email:</strong> pjreji@rediffmail.com</p>
+    <a 
+      href="https://www.linkedin.com/in/reji-p-joseph" 
+      target="_blank" 
+      rel="noopener noreferrer" 
+      className="flex items-center justify-center gap-2 text-blue-600 hover:underline mt-2"
+    >
+      <FaLinkedin className="text-lg" />
+      LinkedIn
+    </a>
+  </div>
+</div>
+
+    {/* Card 3 */}
+    <div className="bg-white shadow-lg rounded-lg overflow-hidden text-center p-6 border-t-4 border-blue-600">
+      <img src={joyson} alt="Mr. Job Joyson" className="w-32 h-32 mx-auto rounded-full mb-4 border-2 border-blue-600 object-cover" />
+      <h4 className="text-xl font-bold text-gray-800">Mr. Job Joyson</h4>
+      <p className="text-sm text-gray-500 mb-2">Managing Director</p>
+      <p className="text-gray-600 text-sm mb-2">MBA in Finance with 15 years of experience in Management.</p>
+      <div className="text-sm text-gray-700 mt-4">
+        <p><strong>Phone:</strong> +91 91234 56789</p>
+        <p><strong>Email:</strong> joyson@example.com</p>
+        <a 
+      href="https://www.linkedin.com/in/job-joyson-bb2b511b5/" 
+      target="_blank" 
+      rel="noopener noreferrer" 
+      className="flex items-center justify-center gap-2 text-blue-600 hover:underline mt-2"
+    >
+      <FaLinkedin className="text-lg" />
+      LinkedIn
+    </a>
+      </div>
+    </div>
+
+  </div>
+</div>
     </section>
   );
 }

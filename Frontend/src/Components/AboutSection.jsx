@@ -1,5 +1,5 @@
 import React from 'react';
-import teamImage from "../assets/teamImage.png"; // Make sure to add this image to your assets folder
+import teamImage from "../assets/teamImage.png";
 
 function AboutSection() {
   return (
@@ -11,7 +11,6 @@ function AboutSection() {
         </div>
         
         <div className="flex flex-col lg:flex-row items-center gap-8">
-          {/* Image Column */}
           <div className="lg:w-2/5">
             <div className="relative">
               <div className="absolute -top-3 -left-3 w-full h-full border-2 border-red-600 rounded-lg"></div>
@@ -37,8 +36,6 @@ function AboutSection() {
               </div>
             </div>
           </div>
-          
-          {/* Text Column */}
           <div className="lg:w-3/5 mt-8 lg:mt-0">
             <h3 className="text-xl md:text-2xl font-bold mb-4">
               A RE-DEFINED SOLUTION FOR CNC MACHINING
@@ -78,10 +75,10 @@ function AboutSection() {
               
               <div className="pt-2">
                 <a 
-                  href="#services" 
+                  href="/about" 
                   className="inline-block px-6 py-3 bg-red-600 text-white font-semibold rounded-full hover:bg-red-700 transition-all duration-300"
                 >
-                  KNOW OUR SERVICES
+                  KNOW MORE
                 </a>
               </div>
             </div>
