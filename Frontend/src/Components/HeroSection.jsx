@@ -1,6 +1,6 @@
 import heroSectionVideo from "../assets/heroSectionVideo.mp4"
 import aerospaceImage from "../assets/Aerospace.png"
-import medicalImage from "../assets/medicalImage.png"
+import medicalImage from "../assets/MedicalImage.png"
 import RFImage from "../assets/RFImage.png"
 import infrastructureImage from "../assets/infrastructureImage.png"
 import React, { useState } from 'react';
