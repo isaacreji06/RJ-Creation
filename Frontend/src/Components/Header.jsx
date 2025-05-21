@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import logo from "../assets/logo.png"
+import logo from "../assets/Logo.png"
 function Header() {
   return (
     <div className="flex items-center gap-10 pt-6 pl-6 pb-5 bg-blue-900">
