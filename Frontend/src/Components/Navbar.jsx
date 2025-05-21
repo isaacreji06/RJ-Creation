@@ -13,21 +13,33 @@ function Navbar() {
         <h1 className="text-xl font-bold pl-2">Home</h1>
         </div>
         <div
+        onClick={()=>{
+          navigate("/services")
+        }}
           className="px-4 py-2 rounded-md hover:bg-white text-white font-orbitron hover:text-red-500 transition-colors duration-300 cursor-pointer"
         >
         <h1 className="text-xl font-bold">Services</h1>
         </div>
         <div
+        onClick={()=>{
+          navigate("/infrastructure")
+        }}
           className="px-4 py-2 rounded-md hover:bg-white text-white font-orbitron hover:text-red-500 transition-colors duration-300 cursor-pointer"
         >
         <h1 className="text-xl font-bold">Infrastructure</h1>
         </div>
         <div
+        onClick={()=>{
+          navigate("/products")
+        }}
           className="px-4 py-2 rounded-md hover:bg-white text-white font-orbitron hover:text-red-500 transition-colors duration-300 cursor-pointer"
         >
         <h1 className="text-xl font-bold">Products</h1>
         </div>
         <div
+        onClick={()=>{
+          navigate("/contact")
+        }}
           className="px-4 py-2 rounded-md hover:bg-white text-white font-orbitron hover:text-red-500 transition-colors duration-300 cursor-pointer"
         >
         <h1 className="text-xl font-bold">Contact Us</h1>

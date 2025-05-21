@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@font-face {
+    font-family: 'Bank Gothic';
+    src: url('./assets/Fonts/bgothl.ttf') format('truetype');
+    font-weight: 300; 
+    font-style: normal;
+    font-display: swap;
+}
+
+/* @font-face for Bank Gothic Medium/Regular */
+@font-face {
+    font-family: 'Bank Gothic';
+    src: url('./assets/Fonts/bgothm.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}

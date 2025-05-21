@@ -33,7 +33,7 @@ const images = [
 
 const CustomerCarousel = () => {
   const settings = {
-    dots: false,
+    dots: true,
     infinite: true,
     speed: 700,
     slidesToShow: 3,
