@@ -20,10 +20,10 @@ function HeroSection() {
         <source src={heroSectionVideo} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
-      <div className="absolute inset-0 bg-black/60 flex items-center justify-center z-10 font-orbitron">
+      <div className="absolute inset-0 bg-black/60 flex items-center justify-center z-10">
         <div className="text-center text-white px-4">
-          <h1 className="text-4xl md:text-6xl font-extrabold mb-4 tracking-wide">
-            Welcome to RJ Creation
+          <h1 className="text-7xl md:text-8xl font-extrabold mb-4 tracking-wide">
+            < span className="font-bankgothic font-medium text-8xl">RJ C</span><span className="font-bankgothic font-medium">reation</span> 
           </h1>
           <p className="text-lg md:text-2xl mb-6">
             A Redefined Solution for CNC Machining

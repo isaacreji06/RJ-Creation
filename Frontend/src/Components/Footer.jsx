@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaFacebook, FaLinkedin, FaInstagram } from 'react-icons/fa';
+import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaLinkedin, } from 'react-icons/fa';
 import logo from "../assets/Logo.png"
 function Footer() {
   return (
@@ -7,7 +7,7 @@ function Footer() {
       <div className="max-w-6xl mx-auto grid md:grid-cols-4 gap-8">
         <div>
             <img src={logo} alt="" />
-          <h2 className="text-2xl font-bold mb-4">RJ Creation</h2>
+          <h2 className="text-2xl font-bold mb-4"><span className="font-bankgothic font-medium text-3xl text-white">RJ C</span><span className='font-bankgothic font-medium text-white'>REATION</span></h2>
           <p className="text-gray-300 text-sm">
             A Re-defined Solution for CNC Machining. We deliver precision-engineered components with advanced technology and a skilled workforce.
           </p>
@@ -28,7 +28,7 @@ function Footer() {
             <li className="flex items-center gap-2"><FaPhoneAlt /> +91-80-29539565, +91-80-23254965</li>
             <li className="flex items-center gap-2"><FaEnvelope /> sales@rjcreation.co.in</li>
             <li className="flex items-start gap-2"><FaMapMarkerAlt size={32} /> 
-              <span>RJ CREATION, No 31 Wimac Junction, Kammagondanahalli, Abbigere main road, Bangalore 560015, Karnataka, INDIA</span>
+              <span><span className="font-bankgothic font-medium text-white text-2xl">RJ C</span><span className='font-bankgothic text-white'>REATION</span>, No 31 Wimac Junction, Kammagondanahalli, Abbigere main road, Bangalore 560015, Karnataka, INDIA</span>
             </li>
           </ul>
         </div>
@@ -41,7 +41,7 @@ function Footer() {
 
       </div>
       <div className="text-center text-sm text-gray-400 mt-12">
-        &copy; {new Date().getFullYear()} RJ Creation. All rights reserved.
+        &copy; {new Date().getFullYear()} <span className="font-bankgothic font-medium text-2xl text-white">RJ C</span><span className='font-bankgothic text-white'>REATION</span>. All rights reserved.
       </div>
     </footer>
   );

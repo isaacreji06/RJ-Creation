@@ -11,8 +11,8 @@ function Header() {
   />
   </Link>
   
-  <h1 className="font-orbitron font-semibold text-[60px] text-white">
-    RJ CREATION
+  <h1 className="text-[60px] text-white">
+    <span className="font-bankgothic font-medium text-7xl">RJ C</span><span className="font-bankgothic font-medium">REATION</span>
   </h1>
 </div>
   )

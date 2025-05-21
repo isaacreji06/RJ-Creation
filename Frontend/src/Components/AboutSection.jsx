@@ -43,11 +43,11 @@ function AboutSection() {
             
             <div className="space-y-4">
               <p className="text-gray-700 leading-relaxed">
-                <span className="font-semibold text-red-600">RJ CREATION</span> was established in 2015 in Bangalore, focusing on precision components for Defense, Aerospace, Medical, and Microwave sectors.
+                <span className="font-bankgothic font-medium text-red-600 text-2xl">RJ C</span><span className='font-bankgothic text-red-600'>REATION</span> was established in 2015 in Bangalore, focusing on precision components for Defense, Aerospace, Medical, and Microwave sectors.
               </p>
               
               <p className="text-gray-700 leading-relaxed">
-                With 14 years of field experience before rebranding as RJ CREATION, we've built a comprehensive manufacturing ecosystem featuring:
+                With 14 years of field experience before rebranding as <span className="font-bankgothic font-medium text-red-600 text-2xl">RJ C</span><span className='font-bankgothic text-red-600'>REATION</span>, we've built a comprehensive manufacturing ecosystem featuring:
               </p>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-2">

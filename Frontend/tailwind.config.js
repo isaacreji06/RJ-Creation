@@ -7,7 +7,7 @@ export default {
   theme: {
   extend: {
     fontFamily: {
-      orbitron: ['Orbitron', 'sans-serif'],
+      bankgothic: ['Bank Gothic', 'sans-serif'],
     },
   },
 },
