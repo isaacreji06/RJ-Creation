@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaFacebook, FaLinkedin, FaInstagram } from 'react-icons/fa';
-import logo from "../assets/logo.png"
+import logo from "../assets/Logo.png"
 function Footer() {
   return (
     <footer className="bg-blue-900 text-white pt-12 pb-6 px-4">
