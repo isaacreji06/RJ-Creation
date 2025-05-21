@@ -1,7 +1,7 @@
 import { FaLinkedin } from "react-icons/fa"
 import teamImage2 from "../assets/teamImage2.png"
-import sadasivan from "../assets/Management/sadasivan.png"
-import reji from "../assets/Management/reji.png"
+import sadasivan from "../assets/Management/Sadasivan.png"
+import reji from "../assets/Management/Reji.png"
 import joyson from "../assets/Management/joyson.png"
 function AboutUs() {
   return (
