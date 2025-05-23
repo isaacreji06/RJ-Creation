@@ -12,7 +12,6 @@ function LandingPage() {
         <AboutSection />
         <VisionsMissionsSection />
         <WhyChooseUs />
-        <h1 className='font-orbitron font-bold text-4xl justify-self-center'>Our Clients</h1>
         <CustomerCarousel />
     </div>
   )
