@@ -4,10 +4,12 @@ import medicalImage from "../assets/MedicalImage.png"
 import RFImage from "../assets/RFImage.png"
 import infrastructureImage from "../assets/infrastructureImage.png"
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+
 
 function HeroSection() {
   const [showModal, setShowModal] = useState(false);
-  
+  const navigate=useNavigate()
   return (
     <section className="relative h-screen w-full overflow-hidden font-orbitron">
       <video
@@ -67,7 +69,7 @@ function HeroSection() {
                     <h3 className="text-base sm:text-lg lg:text-xl font-semibold mb-3 sm:mb-4 leading-tight">
                       AEROSPACE & DEFENCE COMPONENTS
                     </h3>
-                    <button className="border border-white text-white py-2 px-3 sm:px-4 text-sm sm:text-base w-28 sm:w-36 hover:bg-white hover:text-gray-900 transition-all">
+                    <button onClick={() => navigate('/products', { state: { tab: 'aerospace-defense' } })} className="border border-white text-white py-2 px-3 sm:px-4 text-sm sm:text-base w-28 sm:w-36 hover:bg-white hover:text-gray-900 transition-all">
                       KNOW MORE
                     </button>
                   </div>
@@ -85,7 +87,9 @@ function HeroSection() {
                     <h3 className="text-base sm:text-lg lg:text-xl font-semibold mb-3 sm:mb-4 leading-tight">
                       MEDICAL COMPONENTS
                     </h3>
-                    <button className="border border-white text-white py-2 px-3 sm:px-4 text-sm sm:text-base w-28 sm:w-36 hover:bg-white hover:text-gray-900 transition-all">
+                    <button onClick={()=>{
+                      navigate('/products', { state: { tab: 'medical' } })
+                    }} className="border border-white text-white py-2 px-3 sm:px-4 text-sm sm:text-base w-28 sm:w-36 hover:bg-white hover:text-gray-900 transition-all">
                       KNOW MORE
                     </button>
                   </div>
@@ -103,7 +107,9 @@ function HeroSection() {
                     <h3 className="text-base sm:text-lg lg:text-xl font-semibold mb-3 sm:mb-4 leading-tight">
                       RF COMPONENTS
                     </h3>
-                    <button className="border border-white text-white py-2 px-3 sm:px-4 text-sm sm:text-base w-28 sm:w-36 hover:bg-white hover:text-gray-900 transition-all">
+                    <button onClick={()=>{
+                      navigate('/products', { state: { tab: 'rf' } })
+                    }} className="border border-white text-white py-2 px-3 sm:px-4 text-sm sm:text-base w-28 sm:w-36 hover:bg-white hover:text-gray-900 transition-all">
                       KNOW MORE
                     </button>
                   </div>
@@ -121,7 +127,9 @@ function HeroSection() {
                     <h3 className="text-base sm:text-lg lg:text-xl font-semibold mb-3 sm:mb-4 leading-tight">
                       INFRASTRUCTURE
                     </h3>
-                    <button className="border border-white text-white py-2 px-3 sm:px-4 text-sm sm:text-base w-28 sm:w-36 hover:bg-white hover:text-gray-900 transition-all">
+                    <button onClick={()=>{
+                      navigate("/infrastructure")
+                    }} className="border border-white text-white py-2 px-3 sm:px-4 text-sm sm:text-base w-28 sm:w-36 hover:bg-white hover:text-gray-900 transition-all">
                       KNOW MORE
                     </button>
                   </div>

@@ -173,7 +173,7 @@ function Footer() {
             {/* Copyright */}
             <div className="text-center sm:text-left text-xs sm:text-sm text-gray-400 order-2 sm:order-1">
               &copy; {new Date().getFullYear()} 
-              <span className="font-bankgothic font-medium text-base sm:text-lg text-white mx-1">RJ C</span>
+              <span className="font-bankgothic font-medium text-base sm:text-lg text-white ml-1">RJ C</span>
               <span className='font-bankgothic text-white text-sm sm:text-base'>REATION</span>. 
               All rights reserved.
             </div>
