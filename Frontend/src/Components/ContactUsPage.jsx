@@ -85,7 +85,6 @@ const handleSubmit = async (e) => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 via-blue-50 to-indigo-50">
-      {/* Hero Section */}
       <div className="relative overflow-hidden bg-gradient-to-r from-blue-600 to-red-500">
         <div className="absolute inset-0 bg-black opacity-20"></div>
         <div className="relative px-6 py-24 mx-auto max-w-7xl sm:py-32 lg:px-8">
@@ -106,11 +105,8 @@ const handleSubmit = async (e) => {
           </div>
         </div>
       </div>
-
-      {/* Main Content */}
       <div className="px-6 py-16 mx-auto max-w-7xl lg:px-8">
         <div className="grid lg:grid-cols-2 gap-16">
-          {/* Contact Form */}
           <div className="space-y-8">
             <div>
               <h2 className="text-3xl font-bold text-gray-900 mb-4">
@@ -239,8 +235,6 @@ const handleSubmit = async (e) => {
               </button>
             </div>
           </div>
-
-          {/* Contact Information */}
           <div className="space-y-8">
             <div>
               <h2 className="text-3xl font-bold text-gray-900 mb-4">
@@ -273,8 +267,6 @@ const handleSubmit = async (e) => {
                 );
               })}
             </div>
-
-            {/* Map Placeholder */}
            <div className="bg-white rounded-2xl p-6 shadow-lg">
   <h3 className="text-xl font-semibold text-gray-900 mb-4">Find Us Here</h3>
   <div className="aspect-video rounded-lg overflow-hidden">

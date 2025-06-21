@@ -29,7 +29,7 @@ function HeroSection() {
             <span className="font-bankgothic font-medium">reation</span> 
           </h1>
           <p className="text-base sm:text-lg md:text-xl lg:text-2xl mb-6 sm:mb-8 px-2">
-            A Redefined Solution for CNC Machining
+            A Re-defined Solution for CNC Machining
           </p>
           <button
             onClick={() => setShowModal(true)}

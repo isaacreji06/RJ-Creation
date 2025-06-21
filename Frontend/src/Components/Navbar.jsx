@@ -12,21 +12,21 @@ function Navbar() {
 
   const handleNavigation = (path) => {
     navigate(path);
-    setIsMobileMenuOpen(false); // Close mobile menu after navigation
+    setIsMobileMenuOpen(false);
   };
 
   const navItems = [
     { path: "/", label: "Home", icon: <FaHome size={20} /> },
+    { path: "/about", label: "About Us" },
     { path: "/services", label: "Services" },
     { path: "/infrastructure", label: "Infrastructure" },
     { path: "/products", label: "Products" },
+    {path:"/career" ,label:"Career"},
     { path: "/contact", label: "Contact Us" },
-    { path: "/about", label: "About Us" }
   ];
 
   return (
     <nav className="bg-red-500 relative">
-      {/* Desktop Navigation */}
       <div className="hidden lg:flex justify-center items-center gap-4 xl:gap-8 py-1 px-4">
         {navItems.map((item) => (
           <div
@@ -39,8 +39,6 @@ function Navbar() {
           </div>
         ))}
       </div>
-
-      {/* Tablet Navigation */}
       <div className="hidden md:flex lg:hidden justify-center items-center gap-2 py-1 px-2">
         {navItems.map((item) => (
           <div
@@ -53,8 +51,6 @@ function Navbar() {
           </div>
         ))}
       </div>
-
-      {/* Mobile Navigation */}
       <div className="md:hidden flex justify-between items-center py-3 px-4">
         <div
           onClick={() => handleNavigation("/")}
@@ -72,12 +68,10 @@ function Navbar() {
           {isMobileMenuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
         </button>
       </div>
-
-      {/* Mobile Menu Dropdown */}
       {isMobileMenuOpen && (
         <div className="md:hidden absolute top-full left-0 w-full bg-red-500 border-t border-red-400 shadow-lg z-50">
           <div className="flex flex-col">
-            {navItems.slice(1).map((item) => ( // Skip home since it's in the header
+            {navItems.slice(1).map((item) => (
               <div
                 key={item.path}
                 onClick={() => handleNavigation(item.path)}

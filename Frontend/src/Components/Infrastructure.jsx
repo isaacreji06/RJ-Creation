@@ -1,42 +1,3 @@
-// import React from "react";
-// import infraImg from "../assets/infrastructureImage.png"; // Replace with your actual image path
-
-// export default function Infrastructure() {
-//   return (
-//     <section className="py-20 bg-gray-50 min-h-screen">
-//       <div className="container mx-auto px-4">
-//         <div className="text-center mb-12">
-//           <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-gray-800 mb-3 sm:mb-4">Infrastructure</h2>
-//           <div className="w-24 h-1 bg-blue-600 mx-auto"></div>
-//         </div>
-
-//         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
-//           <div className="bg-white p-6 rounded-xl shadow-md border-t-4 border-blue-600">
-//             <h3 className="text-2xl font-semibold text-gray-800 mb-4">Machinery</h3>
-//             <p className="text-gray-700 leading-relaxed mb-4">
-//               <span className="font-bold">Machinery:</span> TAL Vertimach V-400 (VMC), TAL Vertimach V-350 (VMC),
-//               Eumach MC-500P (VMC), 2 nos. of Jyoti RDX 20 (VMC), Mida 6 Turning Centre (Turning),
-//               Ace Turning Centre J 300 Lm (Turning).
-//             </p>
-//             <h4 className="text-xl font-semibold text-gray-800 mb-2">Other Machinery</h4>
-//             <p className="text-gray-700 leading-relaxed">
-//               Table top drilling machine, Table top tapping machine, CNC Servo Controlled Tapping machine,
-//               Bench grinder, 2 nos. of Air Compressor, Fly Press Machine, Power Haxo Cutting Machine.
-//             </p>
-//           </div>
-
-//           <div className="rounded-xl overflow-hidden shadow-md">
-//             <img
-//               src={infraImg}
-//               alt="CNC Machines"
-//               className="w-full h-full object-cover rounded-xl"
-//             />
-//           </div>
-//         </div>
-//       </div>
-//     </section>
-//   );
-// }
 import React, { useState } from 'react';
 import { ChevronDown, Settings, Users, TestTube, ArrowRight, Check } from 'lucide-react';
 
@@ -95,7 +56,6 @@ export default function Infrastructure() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 via-blue-50 to-indigo-50">
-      {/* Hero Section */}
       <div className="relative overflow-hidden bg-gradient-to-r from-blue-600 to-red-500">
         <div className="absolute inset-0 bg-black opacity-20"></div>
         <div className="relative px-6 py-24 mx-auto max-w-7xl sm:py-32 lg:px-8">
@@ -140,10 +100,7 @@ export default function Infrastructure() {
           </div>
         </div>
       </div>
-
-      {/* Content Sections */}
       <div className="px-6 py-16 mx-auto max-w-7xl lg:px-8">
-        {/* Machinery Section */}
         {activeTab === 'machinery' && (
           <div className="space-y-16 animate-in slide-in-from-bottom-4 duration-500">
             <div className="text-center">
@@ -155,8 +112,6 @@ export default function Infrastructure() {
                 in every manufacturing process.
               </p>
             </div>
-
-            {/* Machinery Image */}
             <div className="relative group">
               <div className="aspect-video bg-gradient-to-r from-gray-100 to-gray-200 rounded-2xl overflow-hidden shadow-2xl">
                 <img
@@ -171,8 +126,6 @@ export default function Infrastructure() {
                 </div>
               </div>
             </div>
-
-            {/* Machinery Specifications */}
             <div className="grid md:grid-cols-2 gap-8">
               <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
                 <div className="flex items-center space-x-3 mb-6">
@@ -210,8 +163,6 @@ export default function Infrastructure() {
             </div>
           </div>
         )}
-
-        {/* Quality Testing Section */}
         {activeTab === 'quality' && (
           <div className="space-y-16 animate-in slide-in-from-bottom-4 duration-500">
             <div className="text-center">
@@ -223,8 +174,6 @@ export default function Infrastructure() {
                 operated by experienced professionals to ensure exceptional standards.
               </p>
             </div>
-
-            {/* Quality Images Grid */}
             <div className="grid md:grid-cols-2 gap-8">
               {qualityImages.map((image) => (
                 <div key={image.id} className="relative group cursor-pointer" onClick={() => setSelectedImage(image)}>
@@ -242,8 +191,6 @@ export default function Infrastructure() {
                 </div>
               ))}
             </div>
-
-            {/* Quality Features */}
             <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-2xl p-8">
               <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">Quality Assurance Features</h3>
               <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -259,8 +206,6 @@ export default function Infrastructure() {
                 ))}
               </div>
             </div>
-
-            {/* Quality Process Description */}
             <div className="bg-white rounded-2xl p-8 shadow-lg">
               <h3 className="text-xl font-bold text-gray-900 mb-4">Our Quality Control Process</h3>
               <p className="text-gray-700 leading-relaxed">
@@ -272,8 +217,6 @@ export default function Infrastructure() {
           </div>
         )}
       </div>
-
-      {/* Image Modal */}
       {selectedImage && (
         <div 
           className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 p-4"

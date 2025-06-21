@@ -37,7 +37,7 @@ const CustomerCarousel = () => {
     dots: true,
     infinite: true,
     speed: 700,
-    slidesToShow: 4,
+    slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
@@ -47,21 +47,21 @@ const CustomerCarousel = () => {
     touchMove: true,
     responsive: [
       {
-        breakpoint: 1280, // xl breakpoint
+        breakpoint: 1280,
         settings: {
           slidesToShow: 4,
           slidesToScroll: 1,
         }
       },
       {
-        breakpoint: 1024, // lg breakpoint
+        breakpoint: 1024,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
         }
       },
       {
-        breakpoint: 768, // md breakpoint
+        breakpoint: 768, 
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
@@ -69,7 +69,7 @@ const CustomerCarousel = () => {
         }
       },
       {
-        breakpoint: 640, // sm breakpoint
+        breakpoint: 640, 
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -78,7 +78,7 @@ const CustomerCarousel = () => {
         }
       },
       {
-        breakpoint: 480, // xs breakpoint
+        breakpoint: 480, 
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -98,7 +98,6 @@ const CustomerCarousel = () => {
   return (
     <section className="w-full bg-gray-50 py-8 sm:py-12 lg:py-16">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section Header */}
         <div className="text-center mb-8 sm:mb-10 lg:mb-12">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-800 mb-2 sm:mb-3">
             Our Trusted Partners
@@ -108,22 +107,19 @@ const CustomerCarousel = () => {
             We're proud to work with industry-leading companies across defense, aerospace, and technology sectors
           </p>
         </div>
-
-        {/* Carousel Container */}
         <div className="max-w-7xl mx-auto">
           <div className="carousel-container pb-12 sm:pb-16">
             <Slider {...settings}>
               {images.map((image, index) => (
                 <div key={index} className="px-2 sm:px-3 lg:px-4">
-                  <div className="bg-white rounded-xl sm:rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 transform hover:scale-105 p-4 sm:p-6 lg:p-8 h-32 sm:h-36 lg:h-40 flex items-center justify-center group">
+                  <div className="bg-white rounded-xl sm:rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 transform hover:scale-105 p-3 sm:p-4 lg:p-6 h-44 sm:h-52 lg:h-64 flex items-center justify-center group">
                     <img
                       src={image.src}
                       alt={image.name}
-                      className="max-w-full max-h-full object-contain transition-all duration-300 group-hover:scale-110 filter grayscale group-hover:grayscale-0"
+                      className="w-full h-full object-contain transition-all duration-300 group-hover:scale-110 filter grayscale group-hover:grayscale-0"
                       loading="lazy"
                     />
                   </div>
-                  {/* Optional: Company name tooltip/label */}
                   <div className="text-center mt-2 sm:mt-3">
                     <p className="text-xs sm:text-sm text-gray-500 font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                       {image.name}
@@ -134,13 +130,11 @@ const CustomerCarousel = () => {
             </Slider>
           </div>
         </div>
-
-        {/* Optional: Additional Info Section */}
         <div className="text-center mt-8 sm:mt-12 lg:mt-16">
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 lg:gap-8 max-w-4xl mx-auto">
             <div className="text-center">
               <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-blue-600 mb-1">14+</h3>
-              <p className="text-xs sm:text-sm lg:text-base text-gray-600">Trusted Partners</p>
+              <p className="text-xs sm:text-sm lg:text-base text-gray-600">Trusted Clients</p>
             </div>
             <div className="text-center">
               <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-blue-600 mb-1">15+</h3>
@@ -157,8 +151,6 @@ const CustomerCarousel = () => {
           </div>
         </div>
       </div>
-
-      {/* Custom Styles for Slick Carousel */}
       <style jsx>{`
         .carousel-container .slick-dots li button:before {
           display: none;
