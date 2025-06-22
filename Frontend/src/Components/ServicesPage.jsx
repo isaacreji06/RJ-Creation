@@ -6,10 +6,10 @@ import Aerospace2 from "../assets/Aerospace and Defence/Aerospace2.jpg";
 import Aerospace3 from "../assets/Aerospace and Defence/Aerospace3.jpg";
 import Aerospace4 from "../assets/Aerospace and Defence/Aerospace4.jpg";
 import Aerospace5 from "../assets/Aerospace and Defence/Aerospace5.jpg";
-import medical from "../assets/Medical/Medical1.jpg";
-import medical2 from "../assets/Medical/Medical2.jpg";
-import medical3 from "../assets/Medical/Medical3.jpg";
-import medical4 from "../assets/Medical/Medical4.jpg";
+import medical from "../assets/Medical/Medical1.JPG";
+import medical2 from "../assets/Medical/Medical2.JPG";
+import medical3 from "../assets/Medical/Medical3.JPG";
+import medical4 from "../assets/Medical/Medical4.JPG";
 
 const services = [
   {
