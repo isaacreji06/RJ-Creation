@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { ChevronDown } from "lucide-react";
-import RF1 from "../assets/RF/RF1.jpg";
+import RF1 from "../assets/RF/RF1.JPG";
 import Aerospace1 from "../assets/Aerospace and Defence/Aerospace1.jpg";
 import Aerospace2 from "../assets/Aerospace and Defence/Aerospace2.jpg";
 import Aerospace3 from "../assets/Aerospace and Defence/Aerospace3.jpg";
