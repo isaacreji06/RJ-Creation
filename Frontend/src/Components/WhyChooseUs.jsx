@@ -30,7 +30,7 @@ const features = [
 
 function WhyChooseUs() {
   return (
-    <section className="py-16 bg-white text-center font-orbitron">
+    <section className="py-16 bg-white text-center font-serif">
       <div className="max-w-6xl mx-auto px-4">
         <h2 className="text-3xl md:text-4xl font-bold mb-12">Why Choose Us?</h2>
 

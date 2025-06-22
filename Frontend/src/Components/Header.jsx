@@ -3,7 +3,7 @@ import logo from "../assets/Logo.png"
 
 function Header() {
   return (
-    <div className="flex flex-col sm:flex-row items-center sm:gap-10 gap-4 pt-4 sm:pt-6 pl-4 sm:pl-6 pb-4 sm:pb-5 bg-blue-900">
+    <div className="flex flex-col sm:flex-row items-center sm:gap-10 gap-4 pt-4 sm:pt-6 pl-4 sm:pl-6 pb-4 sm:pb-5 bg-blue-900 font-serif">
       <Link to="/" className="shrink-0">
         <img 
           src={logo} 

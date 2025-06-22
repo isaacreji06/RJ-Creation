@@ -11,7 +11,7 @@ function HeroSection() {
   const [showModal, setShowModal] = useState(false);
   const navigate=useNavigate()
   return (
-    <section className="relative h-screen w-full overflow-hidden font-orbitron">
+    <section className="relative h-screen w-full overflow-hidden font-serif">
       <video
         className="absolute top-0 left-0 w-full h-full object-cover"
         autoPlay

@@ -37,11 +37,11 @@ Returning to India, he served as Production Manager at Wave Mechanics Pvt. Ltd. 
 const aboutSections = [
   {
     title: "Our Story",
-    content: "RJ Creation was established in 2015 at Bangalore, keeping in mind the vast opportunities in precision components for Defense and Aerospace, Medical and Microwave sectors. We were in this field for 14 years and in 2015 we rebadged ourselves as RJ Creation with improved facilities and capabilities."
-  },
-  {
-    title: "Our Mission",
-    content: "We provide comprehensive, full turnkey project management for successful finished precision parts and sub-assemblies. With all the best put together, we can achieve high quality products at minimum time with competitive pricing."
+    content: (
+      <>
+        <span className="font-bankgothic text-3xl">RJ Creation</span>, originally established as <span className="font-bankgothic">Creations</span> in 2008 in Bengaluru, Karnataka, India, was rebranded in 2015. With state-of-the-art manufacturing facilities spanning over 6,000 sq. ft., we have become one of the leading manufacturers of micro components. Our commitment to excellence is reflected in our ISO 9001 certification, with plans to soon achieve AS certification. We offer a comprehensive range of high-quality machine products, all crafted to meet stringent standards. This level of quality is ensured by our dedicated team of skilled professionals, who are the cornerstone of our success.
+      </>
+    )
   },
   {
     title: "Our Leadership",
@@ -53,7 +53,7 @@ export default function AboutUs() {
   const [activeTab, setActiveTab] = useState(0);
   const [selectedMember, setSelectedMember] = useState(null);
   return (
-  <div className="min-h-screen bg-gray-100">
+  <div className="min-h-screen bg-gray-100 font-serif">
     <div className="relative overflow-hidden bg-gradient-to-r from-blue-600 to-red-500">
       <div className="absolute inset-0 bg-black opacity-20"></div>
       <div className="relative px-6 py-24 mx-auto max-w-7xl sm:py-32 lg:px-8">
@@ -65,7 +65,7 @@ export default function AboutUs() {
             </span>
           </h1>
           <p className="mt-6 text-lg leading-8 text-gray-300 max-w-3xl mx-auto">
-              A re-defined solution for CNC machining with 15+ years of expertise in precision manufacturing across Defense, Aerospace, Medical and RF & Microwave sectors.
+              A re-defined solution for CNC machining with 17+ years of expertise in precision manufacturing across Defense, Aerospace, Medical and RF & Microwave sectors.
           </p>
           <div className="flex items-center justify-center mt-10">
             <ChevronDown className="w-8 h-8 text-gray-300 animate-bounce" />
@@ -113,7 +113,7 @@ export default function AboutUs() {
               </div>
               <div className="grid grid-cols-3 gap-4">
                 <div className="text-center">
-                  <h3 className="text-2xl font-bold text-blue-600">15+</h3>
+                  <h3 className="text-2xl font-bold text-blue-600">17+</h3>
                   <p className="text-gray-700 text-sm">Years Experience</p>
                 </div>
                 <div className="text-center">
@@ -137,7 +137,7 @@ export default function AboutUs() {
               <ul className="space-y-3">
                 <li className="flex items-start">
                   <span className="text-blue-500 mr-3 mt-1">•</span>
-                  <span className="text-gray-700">15,000 sq. feet modern manufacturing facility</span>
+                  <span className="text-gray-700">6000 sq. feet modern manufacturing facility</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-blue-500 mr-3 mt-1">•</span>
@@ -160,7 +160,7 @@ export default function AboutUs() {
           </div>
         )}
 
-        {activeTab === 1 && (
+        {activeTab === 3 && (
           <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
             <div className="bg-white rounded-lg shadow-lg p-8">
               <div className="flex items-center mb-6">
@@ -218,7 +218,7 @@ export default function AboutUs() {
           </div>
         )}
 
-        {activeTab === 2 && (
+        {activeTab === 1 && (
           <div className="max-w-6xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
               {teamMembers.map((member, index) => (
@@ -257,7 +257,7 @@ export default function AboutUs() {
         <div className="mt-12 text-center">
           <h3 className="text-2xl font-light text-gray-800 mb-6">Industries We Serve</h3>
           <div className="flex flex-wrap justify-center gap-4">
-            {["Aerospace", "Defense", "Medical", "Microwave", "Electronics", "Automotive"].map((industry, k) => (
+            {["Aerospace", "Defense", "Medical", "RF & Microwave",].map((industry, k) => (
               <span 
                 key={k} 
                 className="bg-gradient-to-r from-blue-500 to-red-500 text-white px-6 py-2 rounded-full text-sm font-medium shadow-lg"

@@ -2,6 +2,14 @@ import React, { useState } from "react";
 import { ChevronDown } from "lucide-react";
 import RF1 from "../assets/RF/RF1.jpg";
 import Aerospace1 from "../assets/Aerospace and Defence/Aerospace1.jpg";
+import Aerospace2 from "../assets/Aerospace and Defence/Aerospace2.jpg";
+import Aerospace3 from "../assets/Aerospace and Defence/Aerospace3.jpg";
+import Aerospace4 from "../assets/Aerospace and Defence/Aerospace4.jpg";
+import Aerospace5 from "../assets/Aerospace and Defence/Aerospace5.jpg";
+import medical from "../assets/Medical/Medical1.jpg";
+import medical2 from "../assets/Medical/Medical2.jpg";
+import medical3 from "../assets/Medical/Medical3.jpg";
+import medical4 from "../assets/Medical/Medical4.jpg";
 
 const services = [
   {
@@ -29,8 +37,8 @@ const services = [
   },
   {
     title: "Pre-Process",
-    image1: Aerospace1,
-    image2: RF1,
+    image1: medical,
+    image2: medical2,
     brief: "Material preparation and component planning before production.",
     content: {
       overview:
@@ -41,7 +49,7 @@ const services = [
         "Prototype feasibility analysis",
         "Design optimization"
       ],
-      industries: ["Automotive", "Electronics", "Industrial"],
+      industries: ["Aerospace", "Medical", "Defense"],
       details: [
         "Material testing and certification verification",
         "CAD/CAM programming and simulation",
@@ -52,8 +60,8 @@ const services = [
   },
   {
     title: "Post-Process",
-    image1: Aerospace1,
-    image2: RF1,
+    image1: Aerospace2,
+    image2: Aerospace3,
     brief: "Finishing operations and quality assurance for completed parts.",
     content: {
       overview:
@@ -75,8 +83,8 @@ const services = [
   },
   {
     title: "Sub-Assemblies",
-    image1: Aerospace1,
-    image2: RF1,
+    image1: Aerospace4,
+    image2: Aerospace5,
     brief: "Complete assembly services for complex multi-component systems.",
     content: {
       overview:
@@ -87,7 +95,7 @@ const services = [
         "Functional testing",
         "Documentation and traceability"
       ],
-      industries: ["Automotive", "Industrial", "Electronics"],
+      industries: ["Aerospace", "Medical", "Defense"],
       details: [
         "Clean room assembly capabilities",
         "Torque specification compliance",
@@ -98,8 +106,8 @@ const services = [
   },
   {
     title: "Sheet Metal Solutions",
-    image1: Aerospace1,
-    image2: RF1,
+    image1: medical3,
+    image2: medical4,
     brief: "Comprehensive sheet metal fabrication and forming services.",
     content: {
       overview:
@@ -110,7 +118,7 @@ const services = [
         "Welding and joining",
         "Powder coating finish"
       ],
-      industries: ["Construction", "HVAC", "Electronics"],
+      industries: ["Aerospace", "Medical", "Defense"],
       details: [
         "Fiber laser cutting with minimal heat-affected zone",
         "CNC press brake with precision back-gauge systems",
@@ -125,7 +133,7 @@ export default function ServicesPage() {
   const [activeTab, setActiveTab] = useState(0);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-100 via-blue-100 to-indigo-100">
+    <div className="min-h-screen bg-gradient-to-br from-gray-100 via-blue-100 to-indigo-100 font-serif">
       <div className="relative overflow-hidden bg-gradient-to-r from-blue-600 to-red-500">
         <div className="absolute inset-0 bg-black opacity-20"></div>
         <div className="relative px-4 sm:px-6 py-20 sm:py-24 lg:py-32 mx-auto max-w-7xl">
