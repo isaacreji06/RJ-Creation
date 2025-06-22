@@ -21,7 +21,7 @@ import Medical3 from "../assets/Medical/Medical3.JPG";
 import Medical4 from "../assets/Medical/Medical4.JPG";
 import Medical5 from "../assets/Medical/Medical5.JPG";
 import Medical6 from "../assets/Medical/Medical6.JPG";
-import RF1 from "../assets/RF/RF1.jpg";
+import RF1 from "../assets/RF/RF1.JPG";
 import { useLocation } from 'react-router-dom';
 import {
   PackageCheck,
