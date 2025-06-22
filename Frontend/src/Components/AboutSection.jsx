@@ -23,15 +23,15 @@ function AboutSection() {
             </div>
             <div className="grid grid-cols-3 gap-2 sm:gap-3">
               <div className="bg-white p-2 sm:p-3 lg:p-4 rounded-lg text-center shadow-sm">
-                <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-red-600">15+</h3>
+                <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-red-600">17+</h3>
                 <p className="text-gray-700 text-xs sm:text-sm lg:text-base">Years Experience</p>
               </div>
               <div className="bg-white p-2 sm:p-3 lg:p-4 rounded-lg text-center shadow-sm">
-                <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-red-600">15k</h3>
+                <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-red-600">6k</h3>
                 <p className="text-gray-700 text-xs sm:text-sm lg:text-base">Sq. Ft. Facility</p>
               </div>
               <div className="bg-white p-2 sm:p-3 lg:p-4 rounded-lg text-center shadow-sm">
-                <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-red-600">3+</h3>
+                <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-red-600">4+</h3>
                 <p className="text-gray-700 text-xs sm:text-sm lg:text-base">Industry Sectors</p>
               </div>
             </div>
@@ -42,13 +42,13 @@ function AboutSection() {
             </h3>
             <div className="space-y-4 sm:space-y-5 lg:space-y-6">
               <p className="text-gray-700 leading-relaxed text-sm sm:text-base lg:text-lg text-center lg:text-left">
-                <span className="font-bankgothic font-medium text-red-600 text-xl sm:text-2xl lg:text-3xl">RJ C</span>
-                <span className='font-bankgothic text-red-600 text-lg sm:text-xl lg:text-2xl'>REATION</span> was established in 2015 in Bangalore, focusing on precision components for Defense, Aerospace, Medical, and Microwave sectors.
+                In the year 2008, <span className="font-bankgothic font-medium text-red-600 text-xl sm:text-2xl lg:text-3xl">C</span>
+                <span className='font-bankgothic text-red-600 text-lg sm:text-xl lg:text-2xl'>REATIONS</span> was established in Bengaluru, focusing on precision components for Defense, Aerospace, Medical, and RF & Microwave sectors.
               </p>
               <p className="text-gray-700 leading-relaxed text-sm sm:text-base lg:text-lg text-center lg:text-left">
-                With 14 years of field experience before rebranding as{' '}
+                It was rebranded as{' '}
                 <span className="font-bankgothic font-medium text-red-600 text-xl sm:text-2xl lg:text-3xl">RJ C</span>
-                <span className='font-bankgothic text-red-600 text-lg sm:text-xl lg:text-2xl'>REATION</span>, we've built a comprehensive manufacturing ecosystem featuring:
+                <span className='font-bankgothic text-red-600 text-lg sm:text-xl lg:text-2xl'>REATION</span> in the year 2015. The company has a legacy of 17 years in the field of CNC Machining, building a comprehensive manufacturing ecosystem. It features:
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-3 lg:gap-4 py-2">
                 <div className="flex items-center justify-center lg:justify-start">

@@ -31,14 +31,18 @@ function VisionsMissionsSection() {
             <h3 className="text-xl sm:text-2xl lg:text-3xl font-semibold mb-3 sm:mb-4 lg:mb-6">
               Mission
             </h3>
-            <p className="text-sm sm:text-base lg:text-lg text-gray-700 leading-relaxed">
-              <li>To provide quality products and services to our customers, ensuring their satisfaction and trust in our capabilities.
-              </li>
-              <li>
-                  We aim to achieve this through continuous innovation, skilled workforce, and adherence to the highest standards of quality and excellence.
-                </li>
-              
-            </p>
+            <ul className="list-disc list-outside pl-4 text-sm sm:text-base lg:text-lg text-gray-700 leading-relaxed">
+
+  <li>
+    To provide quality products and services to our customers,
+    ensuring their satisfaction and trust in our capabilities.
+  </li>
+  <li>
+    We aim to achieve this through continuous innovation, skilled workforce,
+    and adherence to the highest standards of quality and excellence.
+  </li>
+</ul>
+
           </div>
         </div>
         <div className="flex justify-center">
