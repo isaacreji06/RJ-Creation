@@ -43,7 +43,7 @@ const AdminCareerPanel = () => {
   const [editingJobId, setEditingJobId] = useState(null);
   const [isLoggingOut, setIsLoggingOut] = useState(false); // State for logout loading
 
-  const API_BASE_URL = 'http://localhost:8080/api/admin/jobs';
+  const API_BASE_URL = 'https://rj-creation.onrender.com/api/admin/jobs';
   const showNotification = (message, type = 'success') => {
     if (type === 'success') {
       setSuccessMessage(message);
@@ -217,7 +217,7 @@ const AdminCareerPanel = () => {
     setSuccessMessage(null); // Clear any existing messages
 
     try {
-      const response = await fetch('http://localhost:8080/api/admin/logout', {
+      const response = await fetch('https://rj-creation.onrender.com/api/admin/logout', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

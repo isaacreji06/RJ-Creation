@@ -27,7 +27,7 @@
 
 //     try {
 //       // Simulate API call
-//       const response = await fetch('http://localhost:8080/api/admin/login', {
+//       const response = await fetch('https://rj-creation.onrender.com/api/admin/login', {
 //         method: 'POST',
 //         headers: {
 //           'Content-Type': 'application/json',
@@ -247,7 +247,7 @@ export default function SigninPage() {
     setError(null);
 
     try {
-      const response = await fetch('http://localhost:8080/api/admin/login', {
+      const response = await fetch('https://rj-creation.onrender.com/api/admin/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

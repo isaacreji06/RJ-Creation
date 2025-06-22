@@ -126,7 +126,7 @@ const ApplicationForm = ({ selectedJob, onSubmit, onCancel }) => {
     }
 
     try {
-      const response = await fetch("http://localhost:8080/api/apply-job", {
+      const response = await fetch("https://rj-creation.onrender.com/api/apply-job", {
         method: "POST",
         body: data,
       });
@@ -312,7 +312,7 @@ export default function Career() {
     const fetchJobs = async () => {
       try {
         setLoadingJobs(true);
-        const response = await fetch("http://localhost:8080/api/jobs");
+        const response = await fetch("https://rj-creation.onrender.com/api/jobs");
         if (!response.ok) {
           throw new Error("Failed to fetch job openings.");
         }
