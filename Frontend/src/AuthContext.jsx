@@ -9,7 +9,7 @@ export function AuthProvider({ children }) {
   const [authenticated, setAuthenticated] = useState(null);
 
   useEffect(() => {
-    fetch("http://localhost:8080/api/admin/verify", {
+    fetch("https://rj-creation.onrender.com/api/admin/verify", {
       credentials: "include",
     })
       .then(res => setAuthenticated(res.ok))

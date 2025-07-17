@@ -16,6 +16,7 @@ import SigninPage from "./Components/SigninPage";
 import ProtectedRoute from "./Components/ProtectedRoute";
 import RedirectIfAuthenticated from "./RedirectIfAuthenticated";
 import { AuthProvider } from "./AuthContext";
+import PageNotFound from "./Components/PageNotFound";
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
           <Route path="/products" element={<ProductsPage />} />
           <Route path="/contact" element={<ContactUs />} />
           <Route path="/career" element={<Career />} />
+          <Route path="*" element={<PageNotFound />} />
           <Route
             path="/login"
             element={

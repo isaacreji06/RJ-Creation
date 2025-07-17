@@ -26,7 +26,7 @@ function Navbar() {
   ];
 
   return (
-    <nav className="bg-red-500 relative">
+    <nav className="bg-red-700 relative">
       <div className="hidden lg:flex justify-center items-center gap-4 xl:gap-8 py-1 px-4 font-serif">
         {navItems.map((item) => (
           <div
