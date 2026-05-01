@@ -100,7 +100,7 @@ const CustomerCarousel = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-8 sm:mb-10 lg:mb-12">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-800 mb-2 sm:mb-3">
-            Our Trusted Partners
+            Our Trusted Partnerscd
           </h2>
           <div className="w-16 sm:w-20 lg:w-24 h-1 bg-blue-600 mx-auto mb-4 sm:mb-6"></div>
           <p className="text-gray-600 text-sm sm:text-base lg:text-lg max-w-2xl mx-auto">
